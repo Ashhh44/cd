@@ -1,0 +1,237 @@
+<html lang="en" style="--ivory: #F1E3CE; --plum: #3A070C; --lavender: #6F0B17; --mauve: #A51520; --lilac: #D0B294; --champagne: #C9A35F;"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aiza &amp; Hamza — Nikah Invitation</title>
+    <meta name="description" content="You are warmly invited to celebrate the Nikah of Aiza Haniya and Hamza Idris.">
+
+    <meta property="og:title" content="Aiza &amp; Hamza — Nikah Invitation">
+    <meta property="og:description" content="You are warmly invited to celebrate the Nikah of Aiza Haniya and Hamza Idris.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <style>
+      body, p, h1, h2, span, small, strong, div, a {
+        font-family: 'Noto Serif Display', serif !important;
+      }
+    </style>
+
+    <script src="./assets/js/config.js?v=4" defer=""></script>
+    <script src="./assets/js/app.js" defer=""></script>
+  </head>
+
+  <body class="">
+    <main id="invitation">
+      <audio id="backgroundMusic" loop="" preload="none" src="./media/music-placeholder.mp3"></audio>
+
+      <button id="musicToggle" class="music-toggle is-playing" type="button" aria-label="Pause background music">
+        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span id="musicLabel">Music</span>
+      </button>
+
+        
+      <section id="hero" class="hero is-open" tabindex="-1">
+        <video id="introVideo" class="hero-video" muted="" playsinline="" preload="metadata" poster="./media/intro-placeholder.webp">
+          <source id="introVideoSource" type="video/mp4" src="./media/intro-placeholder.mp4">
+        </video>
+
+        <div class="hero-veil"></div>
+
+        <div id="openingMark" class="opening-mark" aria-hidden="true">
+          <span class="opening-label"></span>
+          <span class="opening-ripple"></span>
+        </div>
+
+        <div class="hero-content">
+          <p class="bismillah" lang="ar" data-bind="copy.bismillah">﷽</p>
+          <p class="translation" data-bind="copy.bismillahTranslation"></p>
+
+          <div class="hero-divider"><span>✦</span></div>
+          <p class="hero-welcome" data-bind="copy.welcomeLine">We request the honour of your
+presence at the Nikah of</p>
+
+          <div class="couple-names">
+            <div>
+              <h1 id="brideName"><span>Aiza</span> Haniya</h1>
+              <p data-bind="couple.bride.relation">Daughter of</p>
+              <small data-bind="couple.bride.parents">Barkat Ali &amp; Razia Sultana</small>
+            </div>
+
+            <span class="name-ampersand">&amp;</span>
+
+            <div>
+              <h1 id="groomName"><span>Hamza</span> Idris</h1>
+              <p data-bind="couple.groom.relation">Son of</p>
+              <small data-bind="couple.groom.parents">Abdul Rahman &amp; Zohra Begum</small>
+            </div>
+          </div>
+
+          <p class="hero-invitation" data-bind="copy.invitation"></p>
+          <p class="hero-closing" data-bind="copy.heroClosing">as they begin their forever in
+faith and love.</p>
+
+          <a class="scroll-cue" href="#welcome">
+            <span>Scroll</span>
+            <i aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+      
+      <div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+        
+      <section id="welcome" class="welcome-section section-pad">
+        <div class="section-shell welcome-shell">
+          <div class="welcome-copy reveal">
+            <h2 data-bind="copy.welcomeTitle">A Blessed Beginning</h2>
+            <p data-bind="copy.welcomeBody">With hearts full of gratitude, we warmly invite you to join us as we celebrate this beautiful beginning with the love, prayers, and blessings of our families.</p>
+            <div id="welcomeSignature" class="signature">Aiza <span>&amp;</span> Hamza</div>
+          </div>
+        </div>
+      </section>
+
+<div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+      <section id="date" class="scratch-section section-pad">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">A date to hold close</span>
+            <h2 id="scratchHeading">Scratch to Reveal</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+<div class="scratch-frame-shell reveal">
+  <img src="./assets/images/scratch-frame.webp" alt="" class="scratch-frame-overlay" aria-hidden="true">
+
+  <div id="scratchCard" class="scratch-wrap">
+    <div class="date-reveal" aria-live="polite">
+      <span class="date-kicker">You’re Invited!</span>
+      <strong class="date-main" data-bind="wedding.date">October 18, 2026</strong>
+<div class="date-day">
+  <span data-bind="wedding.day">Sunday</span>
+  <a aria-hidden="true">⬩</a>
+  <span data-bind="wedding.time">07:00 PM</span>
+</div>
+    </div>
+
+    <canvas id="scratchCanvas" class="scratch-canvas" role="button" tabindex="0" aria-label="Scratch to reveal the wedding date. Press Enter to reveal." width="437" height="272"></canvas>
+  </div>
+</div>
+
+          <p id="scratchNote" class="scratch-note reveal">
+            Use your finger or cursor to uncover the moment.
+          </p>
+        </div>
+      </section>
+
+<div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+      <section class="gallery-section section-pad" aria-label="Gallery">
+        <div class="section-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Our story</span>
+            <h2>Moments, softly held</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div id="galleryFrame" class="gallery-frame reveal">
+            <div id="gallerySlides"><figure class="gallery-slide"><img src="./media/gallery/01.webp" alt="A softly lit wedding detail" loading="eager"><figcaption></figcaption></figure><figure class="gallery-slide is-active"><img src="./media/gallery/02.webp" alt="A joyful wedding celebration" loading="lazy"><figcaption></figcaption></figure><figure class="gallery-slide"><img src="./media/gallery/03.webp" alt="Elegant wedding florals and table setting" loading="lazy"><figcaption></figcaption></figure></div>
+            <span class="gallery-corner gallery-corner-a" aria-hidden="true"></span>
+            <span class="gallery-corner gallery-corner-b" aria-hidden="true"></span>
+          </div>
+
+        <div id="galleryDots" class="gallery-dots reveal" aria-label="Choose gallery image"></div>
+        </div>
+      </section>
+
+<div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+      <section class="countdown-section section-pad">
+        <div class="section-shell countdown-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Until we say Qubool Hai</span>
+            <h2>Counting every heartbeat</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
+
+          <div class="countdown reveal" aria-label="Wedding countdown">
+            <div><strong id="countdownDays">57</strong><span>days</span></div>
+            <div><strong id="countdownHours">19</strong><span>hours</span></div>
+            <div><strong id="countdownMinutes">20</strong><span>minutes</span></div>
+            <div><strong id="countdownSeconds">51</strong><span>seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+<div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+<section class="venue-section section-pad">
+  <div class="section-shell">
+    <div class="venue-card reveal">
+
+      <span class="eyebrow">The venue</span>
+
+      <div class="venue-divider" aria-hidden="true">
+        <span>✦</span>
+      </div>
+
+      <h2 data-bind="venue.name">Hyatt Regency</h2>
+
+      <p data-bind="venue.address">Anna Salai, Teynampet, Chennai</p>
+
+      <a id="mapLink" class="venue-map-button" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/9SjDC3RRg9jHZty59">
+        View on Google Maps
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+      <section class="gifts-section section-pad">
+        <div class="gift-bloom" aria-hidden="true"><i></i><i></i><i></i></div>
+
+        <div class="gift-copy reveal">
+          <span class="eyebrow">With all our hearts</span>
+          <h2>Your presence is our present</h2>
+          <p><span data-bind="copy.gifts">Your love, blessings, and presence are the greatest gifts we could ever ask for.</span></p>
+        </div>
+      </section>
+
+        
+      <div class="floral-divider" aria-hidden="true">
+  <img src="./assets/images/floral-divider.webp" alt="">
+</div>
+
+      <footer class="closing-section">
+        <div class="closing-arch reveal">
+          <span class="ornament light" aria-hidden="true"><i></i></span>
+          <h2 data-bind="copy.closing">We can’t wait to celebrate with you.</h2>
+          <div id="closingNames" class="closing-names">Aiza <span>&amp;</span> Hamza</div>
+          <small id="closingDetails">October 18, 2026 · Hyatt Regency</small>
+        </div>
+      </footer>
+    </main>
+  
+</body></html>
