@@ -152,7 +152,6 @@ document.addEventListener("dragstart", (event) => {
       const distanceX = touchStartX - event.clientX;
       const distanceY = touchStartY - event.clientY;
 
-  
       if (Math.abs(distanceX) >= 45) {
         showSlide(
           distanceX > 0
@@ -164,9 +163,7 @@ document.addEventListener("dragstart", (event) => {
         return;
       }
 
-
       if (Math.abs(distanceY) > 20) return;
-
 
       showSlide(
         (activeSlide + 1) % config.media.gallery.length
@@ -268,7 +265,7 @@ document.addEventListener("dragstart", (event) => {
         try {
           await audio.play();
         } catch {
-
+          // Ignore play errors
         }
       } else {
         audio.pause();
@@ -333,7 +330,6 @@ document.addEventListener("dragstart", (event) => {
       const width = rect.width;
       const height = rect.height;
 
-     
       const gradient = context.createLinearGradient(0, 0, width, height);
 
       gradient.addColorStop(0, config.theme.plum);
@@ -347,7 +343,6 @@ document.addEventListener("dragstart", (event) => {
       context.fillStyle = gradient;
       context.fillRect(0, 0, width, height);
 
-
       const shimmer = context.createLinearGradient(0, 0, width, height);
 
       shimmer.addColorStop(0, "rgba(255,255,255,0)");
@@ -358,7 +353,6 @@ document.addEventListener("dragstart", (event) => {
 
       context.fillStyle = shimmer;
       context.fillRect(0, 0, width, height);
-
 
       const glitterCount = Math.min(
         1100,
@@ -383,7 +377,6 @@ document.addEventListener("dragstart", (event) => {
         context.arc(x, y, size, 0, Math.PI * 2);
         context.fill();
       }
-
 
       const sparkleCount = Math.max(
         20,
@@ -413,7 +406,6 @@ document.addEventListener("dragstart", (event) => {
         context.stroke();
       }
 
-
       for (let i = 0; i < 350; i += 1) {
         const x = Math.random() * width;
         const y = Math.random() * height;
@@ -430,7 +422,6 @@ document.addEventListener("dragstart", (event) => {
       }
 
       context.globalAlpha = 1;
-
 
       context.globalCompositeOperation = "destination-out";
       context.lineCap = "round";
