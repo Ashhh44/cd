@@ -1,6 +1,6 @@
 window.INVITATION_CONFIG = {
   site: {
-    title: "Ayesha & Fariduddin — Nikah Invitation",
+    title: "Enas & Ahrar — Nikah Invitation",
     description: "You are warmly invited to celebrate the Nikah of Ayesha Enas and Syed Fariduddin (Ahrar).",
   },
 
@@ -22,9 +22,7 @@ window.INVITATION_CONFIG = {
 
   copy: {
     bismillah: "﷽",
-    bismillahTranslation: "",
     welcomeLine: "We request the honour of your\npresence at the Nikah of",
-    invitation: "",
     heroClosing: "as they begin their forever in\nfaith and love.",
     welcomeTitle: "A Blessed Beginning",
     welcomeBody: "With hearts full of gratitude, we warmly invite you to join us as we celebrate this beautiful beginning with the love, prayers, and blessings of our families.",
@@ -50,17 +48,14 @@ window.INVITATION_CONFIG = {
       {
         src: "./media/gallery/01.webp",
         alt: "A softly lit wedding detail",
-        caption: "",
       },
       {
         src: "./media/gallery/02.webp",
         alt: "A joyful wedding celebration",
-        caption: "",
       },
       {
         src: "./media/gallery/03.webp",
         alt: "Elegant wedding florals and table setting",
-        caption: "",
       },
     ],
   },
