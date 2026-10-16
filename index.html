@@ -1,4 +1,6 @@
-<html lang="en" style="--ivory: #F1E3CE; --plum: #3A070C; --lavender: #6F0B17; --mauve: #A51520; --lilac: #D0B294; --champagne: #C9A35F;"><head>
+<!DOCTYPE html>
+<html lang="en" style="--ivory: #F1E3CE; --plum: #3A070C; --lavender: #6F0B17; --mauve: #A51520; --lilac: #D0B294; --champagne: #C9A35F;">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,15 +11,11 @@
     <meta property="og:description" content="You are warmly invited to celebrate the Nikah of Enas and Ahrar.">
     <meta property="og:type" content="website">
 
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&amp;family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/styles.css">
-
 
     <style>
       body, p, h1, h2, span, small, strong, div, a {
@@ -29,7 +27,7 @@
     <script src="./assets/js/app.js" defer=""></script>
   </head>
 
-  <body class="">
+  <body>
     <main id="invitation">
       <audio id="backgroundMusic" loop="" preload="none" src="./media/music-placeholder.mp3"></audio>
 
@@ -38,7 +36,6 @@
         <span id="musicLabel">Music</span>
       </button>
 
-        
       <section id="hero" class="hero is-open" tabindex="-1">
         <video id="introVideo" class="hero-video" muted="" playsinline="" preload="metadata" poster="./media/intro-placeholder.webp">
           <source id="introVideoSource" type="video/mp4" src="./media/intro-placeholder.mp4">
@@ -60,7 +57,7 @@
 
           <div class="couple-names">
             <div>
-              <h1 id="brideName"><span>Enas</span> </h1>
+              <h1 id="brideName"><span>Enas</span></h1>
               <p data-bind="couple.bride.relation">Daughter of</p>
               <small data-bind="couple.bride.parents">Mohd. Safi Ur Rehman</small>
             </div>
@@ -68,7 +65,7 @@
             <span class="name-ampersand">&amp;</span>
 
             <div>
-              <h1 id="groomName"><span>Ahrar</span> </h1>
+              <h1 id="groomName"><span>Ahrar</span></h1>
               <p data-bind="couple.groom.relation">Son of</p>
               <small data-bind="couple.groom.parents">Syed Mateenuddin (Rtd. A.S.I)</small>
             </div>
@@ -85,10 +82,9 @@
       </section>
       
       <div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
- 
       <section id="welcome" class="welcome-section section-pad">
         <div class="section-shell welcome-shell">
           <div class="welcome-copy reveal">
@@ -99,10 +95,9 @@
         </div>
       </section>
 
-<div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
+      <div class="floral-divider" aria-hidden="true">
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
       <section id="date" class="scratch-section section-pad">
         <div class="section-shell">
@@ -112,23 +107,23 @@
             <span class="ornament" aria-hidden="true"><i></i></span>
           </header>
 
-<div class="scratch-frame-shell reveal">
-  <img src="./assets/images/scratch-frame.webp" alt="" class="scratch-frame-overlay" aria-hidden="true">
+          <div class="scratch-frame-shell reveal">
+            <img src="./assets/images/scratch-frame.webp" alt="" class="scratch-frame-overlay" aria-hidden="true">
 
-  <div id="scratchCard" class="scratch-wrap">
-    <div class="date-reveal" aria-live="polite">
-      <span class="date-kicker">You’re Invited!</span>
-      <strong class="date-main" data-bind="wedding.date">November 08, 2026</strong>
-<div class="date-day">
-  <span data-bind="wedding.day">Sunday</span>
-  <a aria-hidden="true">⬩</a>
-  <span data-bind="wedding.time">07:30 PM</span>
-</div>
-    </div>
+            <div id="scratchCard" class="scratch-wrap">
+              <div class="date-reveal" aria-live="polite">
+                <span class="date-kicker">You’re Invited!</span>
+                <strong class="date-main" data-bind="wedding.date">November 08, 2026</strong>
+                <div class="date-day">
+                  <span data-bind="wedding.day">Sunday</span>
+                  <a aria-hidden="true">⬩</a>
+                  <span data-bind="wedding.time">07:30 PM</span>
+                </div>
+              </div>
 
-    <canvas id="scratchCanvas" class="scratch-canvas" role="button" tabindex="0" aria-label="Scratch to reveal the wedding date. Press Enter to reveal." width="437" height="272"></canvas>
-  </div>
-</div>
+              <canvas id="scratchCanvas" class="scratch-canvas" role="button" tabindex="0" aria-label="Scratch to reveal the wedding date. Press Enter to reveal." width="437" height="272"></canvas>
+            </div>
+          </div>
 
           <p id="scratchNote" class="scratch-note reveal">
             Use your finger or cursor to uncover the moment.
@@ -136,10 +131,9 @@
         </div>
       </section>
 
-<div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
+      <div class="floral-divider" aria-hidden="true">
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
       <section class="gallery-section section-pad" aria-label="Gallery">
         <div class="section-shell">
@@ -150,19 +144,18 @@
           </header>
 
           <div id="galleryFrame" class="gallery-frame reveal">
-            <div id="gallerySlides"><figure class="gallery-slide"><img src="./media/gallery/01.webp" alt="A softly lit wedding detail" loading="eager"><figcaption></figcaption></figure><figure class="gallery-slide is-active"><img src="./media/gallery/02.webp" alt="A joyful wedding celebration" loading="lazy"><figcaption></figcaption></figure><figure class="gallery-slide"><img src="./media/gallery/03.webp" alt="Elegant wedding florals and table setting" loading="lazy"><figcaption></figcaption></figure></div>
+            <div id="gallerySlides"></div>
             <span class="gallery-corner gallery-corner-a" aria-hidden="true"></span>
             <span class="gallery-corner gallery-corner-b" aria-hidden="true"></span>
           </div>
 
-        <div id="galleryDots" class="gallery-dots reveal" aria-label="Choose gallery image"></div>
+          <div id="galleryDots" class="gallery-dots reveal" aria-label="Choose gallery image"></div>
         </div>
       </section>
 
-<div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
+      <div class="floral-divider" aria-hidden="true">
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
       <section class="countdown-section section-pad">
         <div class="section-shell countdown-shell">
@@ -181,41 +174,32 @@
         </div>
       </section>
 
-<div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
-
-<section class="venue-section section-pad">
-  <div class="section-shell">
-    <div class="venue-card reveal">
-
-      <span class="eyebrow">The venue</span>
-
-      <div class="venue-divider" aria-hidden="true">
-        <span>✦</span>
+      <div class="floral-divider" aria-hidden="true">
+        <img src="./assets/images/floral-divider.webp" alt="">
       </div>
 
-      <h2 data-bind="venue.name">Abdullah Palace</h2>
+      <section class="venue-section section-pad">
+        <div class="section-shell">
+          <div class="venue-card reveal">
+            <span class="eyebrow">The venue</span>
+            <div class="venue-divider" aria-hidden="true">
+              <span>✦</span>
+            </div>
+            <h2 data-bind="venue.name">Abdullah Palace</h2>
+            <p data-bind="venue.address">Tipu Sultan Chowk, Paradise Colony, Walgaon Road, Amravati, Maharashtra 444601</p>
+            <a id="mapLink" class="venue-map-button" target="_blank" rel="noreferrer" href="https://maps.google.com/?cid=15687481452507691617">
+              View on Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
 
-      <p data-bind="venue.address">Tipu Sultan Chowk, Paradise Colony, Walgaon Road, Amravati, Maharashtra 444601</p>
-
-      <a id="mapLink" class="venue-map-button" target="_blank" rel="noreferrer" href="https://maps.google.com/?cid=15687481452507691617">
-        View on Google Maps
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
+      <div class="floral-divider" aria-hidden="true">
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
       <section class="gifts-section section-pad">
         <div class="gift-bloom" aria-hidden="true"><i></i><i></i><i></i></div>
-
         <div class="gift-copy reveal">
           <span class="eyebrow">With all our hearts</span>
           <h2>Your presence is our present</h2>
@@ -223,11 +207,9 @@
         </div>
       </section>
 
-  
       <div class="floral-divider" aria-hidden="true">
-  <img src="./assets/images/floral-divider.webp" alt="">
-</div>
-
+        <img src="./assets/images/floral-divider.webp" alt="">
+      </div>
 
       <footer class="closing-section">
         <div class="closing-arch reveal">
@@ -238,5 +220,5 @@
         </div>
       </footer>
     </main>
-  
-</body></html>
+  </body>
+</html>
